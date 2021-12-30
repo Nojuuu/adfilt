@@ -2832,13 +2832,9 @@ $removeparam=plink,domain=audible.*
 ||netflix.com^$removeparam=trackIdEpisode
 ||netflix.com^$removeparam=dpRightClick
 
-! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1889101
-$removeparam=rx_c,domain=cvshealth.com
-$removeparam=rx_group,domain=cvshealth.com
-$removeparam=rx_job,domain=cvshealth.com
-$removeparam=rx_source,domain=cvshealth.com
-$removeparam=rx_ts,domain=cvshealth.com
-$removeparam=rx_p,domain=cvshealth.com
+! https://www.paramountplus.com/fi/?cbsclick=QHSXuQw7WxyIWrPQHcWEzT3UUkG2eTztlwcSQ00&vndid=395495
+$removeparam=cbsclick,domain=paramountplus.com|cbs.com
+$removeparam=vndid,domain=paramountplus.com|cbs.com
 
 !#if !env_mobile
 ! ——— Mobile ——— !
