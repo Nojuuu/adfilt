@@ -412,7 +412,7 @@ $removeparam=refer_code
 ! https://github.com/AdguardTeam/AdguardFilters/issues/113875
 $removeparam=AFID,domain=~chggtrx.com|~state.gov
 ! (https://github.com/uBlockOrigin/uAssets/issues/14997)
-$~css,~script,removeparam=campaignid
+$~css,removeparam=campaignid
 
 ! https://github.com/DandelionSprout/adfilt/discussions/163#discussioncomment-1412160
 $removeparam=loc,domain=~geizhals.*|~ebay.*|~myanimelist.net|~microsoft.com|~liveperson.net
@@ -3547,6 +3547,9 @@ $removeparam=sub,domain=allboner.com|twinkvideos.com
 
 ! https://www.sony.se/electronics/sound-bars/ht-a3000?cpint=homepage_promotion_tiles-Promotion%20Tiles--responsivegrid_structure_top_promotiontiles_copy_1
 ||sony.^$removeparam=cpint
+
+! https://www.smithsonianmag.com/history/real-warriors-woman-king-dahomey-agojie-amazons-180980750/?is_pocket=1
+||smithsonianmag.com^$removeparam=is_pocket
 
 !#if !env_mobile
 ! ——— Mobile ——— !
